@@ -5,24 +5,21 @@ Created on Sep 24, 2019
 '''
 import unittest
 import requests
-import json
-
 class Test(unittest.TestCase):
+    """Unit Test"""
     @classmethod
-    def setUp (self):
-        self.ID = 'cjarrett1'
-        self.ID2 = 'INVALID_USER'
-
-    def testValidUser(self):
+    def setUp(cls):
+        cls.ID = 'cjarrett1'
+        cls.ID2 = 'INVALID_USER'
+    def test_validuser(self):
+        """Check if user is a valid user"""
         api = 'https://api.github.com/users/'+self.ID+'/repos'
-        r = requests.get(api)
-        self.assertEquals(r.status_code,200)
-        
-    def testInvalidUser(self):
+        r_1 = requests.get(api)
+        self.assertEqual(r_1.status_code, 200)
+    def test_invaliduser(self):
+        """Check if user is not valid. Status code should return error."""
         api = 'https://api.github.com/users/'+self.ID2+'/repos'
-        r = requests.get(api)
-        self.assertEquals(r.status_code,404)
-    
-
+        r_1 = requests.get(api)
+        self.assertEqual(r_1.status_code, 404)
 if __name__ == "__main__":
     unittest.main()
