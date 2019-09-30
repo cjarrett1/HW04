@@ -1,0 +1,10 @@
+------------------------------------------------------------------
+Your code has been rated at 8.75/10 (previous run: 8.33/10, +0.42)
+PyLint: The stdout of the command line is:
+ ************* Module HW04_CraigJarrett
+C:  1, 0: Module name "HW04_CraigJarrett" doesn't conform to snake_case naming style (invalid-name)
+C:  8, 0: Missing function or method docstring (missing-function-docstring)
+C: 18, 0: Missing function or method docstring (missing-function-docstring)
+
+------------------------------------------------------------------
+Your code has been rated at 8.75/10 (previous run: 8.75/10, +0.00)

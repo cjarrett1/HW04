@@ -1,0 +1,37 @@
+PyLint: Executing command line: /Library/Frameworks/Python.framework/Versions/3.7/bin/pylint --output-format=text --msg-template='{C}:{line:3d},{column:2d}: {msg} ({symbol})' /Users/CJ/Documents/GitHub/HW04/HW04_CraigJarrett.py
+PyLint: The stdout of the command line is:
+ ************* Module HW04_CraigJarrett
+C:  9, 0: Trailing whitespace (trailing-whitespace)
+C: 12, 0: Trailing whitespace (trailing-whitespace)
+C: 16, 5: Exactly one space required around assignment
+    i=0
+     ^ (bad-whitespace)
+C: 17, 0: Trailing whitespace (trailing-whitespace)
+C: 18,28: Trailing whitespace (trailing-whitespace)
+C: 21,14: No space allowed before bracket
+        print ('Repo: ' + git_data['name'] + ' || ' + 'Number of commits: ' + count)
+              ^ (bad-whitespace)
+C: 23, 0: Trailing whitespace (trailing-whitespace)
+C: 25,16: Exactly one space required around assignment
+    commit_count=0
+                ^ (bad-whitespace)
+C: 29, 0: Trailing whitespace (trailing-whitespace)
+C: 36, 0: Trailing whitespace (trailing-whitespace)
+C: 40, 0: Trailing newlines (trailing-newlines)
+C:  1, 0: Module name "HW04_CraigJarrett" doesn't conform to snake_case naming style (invalid-name)
+W: 11,16: Redefining name 'gitID' from outer scope (line 38) (redefined-outer-name)
+C: 11, 0: Argument name "gitID" doesn't conform to snake_case naming style (invalid-name)
+C: 11, 0: Missing function or method docstring (missing-function-docstring)
+E: 13,44: Undefined variable 'ID' (undefined-variable)
+C: 14, 4: Variable name "r" doesn't conform to snake_case naming style (invalid-name)
+W: 11,16: Unused argument 'gitID' (unused-argument)
+C: 24, 0: Missing function or method docstring (missing-function-docstring)
+C: 27, 4: Variable name "r2" doesn't conform to snake_case naming style (invalid-name)
+W: 34,16: Statement seems to have no effect (pointless-statement)
+E: 34,16: Use of the non-existent ++ operator (nonexistent-operator)
+C: 38, 0: Constant name "gitID" doesn't conform to UPPER_CASE naming style (invalid-name)
+W:  7, 0: Unused import json (unused-import)
+C:  7, 0: standard import "import json" should be placed before "import requests" (wrong-import-order)
+
+------------------------------------
+Your code has been rated at -3.20/10
